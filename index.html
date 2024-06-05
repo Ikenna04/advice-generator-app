@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Advice Generator App</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<link
+			rel="shortcut icon"
+			href="img/favicon-32x32.png"
+			type="image/x-icon" />
+	</head>
+	<body>
+		<div class="container">
+			<p>Advice #<span id="quote-num">???</span></p>
+			<h1>"<span id="quote"> Loading ... </span>"</h1>
+
+			<div class="img-divider">
+				<img
+					src="img/pattern-divider-desktop.svg"
+					alt="Pattern Divider"
+					class="desktop" />
+				<img
+					src="img/pattern-divider-mobile.svg"
+					alt="Pattern Divider"
+					class="mobile" />
+			</div>
+			<div class="none"></div>
+			<input
+				type="text"
+				name="dice"
+				id="dice" />
+			<label
+				for="dice"
+				class="dice"
+				onclick="getQuote(api_url)">
+				<img
+					src="img/icon-dice.svg"
+					alt="Dice Image"
+			/></label>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
